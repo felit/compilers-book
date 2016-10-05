@@ -16,8 +16,9 @@ public class Parser {
     Env top = null;
     int used = 0;
 
-    public Parser(Lexer lex) {
+    public Parser(Lexer lex) throws IOException {
         this.lex = lex;
+        move();
     }
 
     void move() throws IOException {
