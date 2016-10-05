@@ -6,7 +6,7 @@ import lexer.Token;
  */
 public class Or extends Logical {
 
-    Or(Token tok, Expr expr1, Expr expr2) {
+    public Or(Token tok, Expr expr1, Expr expr2) {
         super(tok, expr1, expr2);
     }
 

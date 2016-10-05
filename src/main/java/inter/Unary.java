@@ -8,7 +8,7 @@ import symbols.Type;
 public class Unary extends Op {
     public Expr expr;
 
-    Unary(Token tok, Expr x) {
+    public Unary(Token tok, Expr x) {
         super(tok, null);
         this.expr = x;
         type = Type.max(Type.Int, expr.type);

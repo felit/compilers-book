@@ -8,7 +8,7 @@ import symbols.Type;
 public class Arith extends Op {
     public Expr expr1, expr2;
 
-    Arith(Token tok, Expr expr1, Expr expr2) {
+    public Arith(Token tok, Expr expr1, Expr expr2) {
         super(tok, null);
         this.expr1 = expr1;
         this.expr2 = expr2;
